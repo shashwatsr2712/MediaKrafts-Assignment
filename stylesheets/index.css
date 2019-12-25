@@ -1,0 +1,111 @@
+body{
+    font-family:"Algreya";
+}
+
+header#heading{
+    font-family:"Source Sans Pro","Montserrat",sans-serif;
+    text-align:center;
+}
+header#heading h1{
+    font-size: 5.5rem;
+    font-weight: 1000;
+    background: linear-gradient(to right, #DC143C 0%, #FFA07A 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    color:#ff0000;
+    letter-spacing: 1px;
+    margin-bottom:0;
+}
+header#heading h5{
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+hr{
+    width:20em;
+    border-top-width: 6px;
+    border-top-color:#DC143C;
+}
+
+p#first-bold{
+    font-weight:bold;
+    font-size:1.2rem;
+    text-align:center;
+}
+
+article>header{
+    position: relative;
+}
+article>header h3{
+    font-family:"Montserrat","Source San Pro",sans-serif;
+    letter-spacing:0.1em;
+    font-weight:1000;
+}
+div.rectangle{
+    background:linear-gradient(to right,#ff9100 50%,#FFFFFF);
+    padding-top:0.5em;
+    padding-bottom:0.2em;
+    padding-left:1.6em;
+}
+div.square{
+    position:absolute;
+    top:0.5em;
+    left:-0.75em;
+    background-color:#000000;
+    color:#FFFFFF;
+    z-index:2;
+}
+div.square>h4{
+    padding-top:0.1em;
+    padding-left:0.4em;
+    padding-right:0.4em;
+}
+div.content ul{
+    padding-left:1em;
+}
+div.gradient-blocks{
+    font-family:"Montserrat","Source San Pro",sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    position: relative;
+}
+div.gradient-block{
+    border-radius:1em;
+    background:linear-gradient(to right,#DC143C 0%, #FF6347 100%);
+}
+div.gradient-block h2:first-child{
+    padding-top:0.5em;
+    padding-left:0.25em;
+}
+div.gradient-block h2:not(:first-child){
+    padding-bottom:0.5em;
+    padding-left:0.25em;
+}
+div.gradient-block>div.col-4{
+    position:relative;
+}
+div.gradient-block i{
+    position: absolute;
+    margin:0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3.5em;
+    cursor:pointer;
+}
+@media screen and (max-width:575px){
+    header#heading h1{
+        font-size: 4.5rem;
+    }
+    div.gradient-blocks{
+        margin-left:1vw;
+        margin-right:1vw;
+    }
+    div.gradient-block h2{
+        font-size:1rem;
+    }
+}
+
+div.modal-dialog{
+    margin-top:40vh;
+}
